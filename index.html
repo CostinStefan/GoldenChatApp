@@ -726,8 +726,8 @@
 
         const matchDate = document.createElement('span');
         matchDate.classList.add('matchDate');
-        // Display the country before the league name:
-        matchDate.textContent = `${match.dateNtime} - ${match.country} ${match.league}`;
+        // Removed country, now displaying only date and league:
+        matchDate.textContent = `${match.dateNtime} - ${match.league}`;
         matchHeader.appendChild(matchDate);
 
         const starIcon = document.createElement('span');
@@ -1030,7 +1030,7 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       // Replace the URL below with the correct URL/path to your JSON file
-      const gistRawUrl = 'https://gist.githubusercontent.com/CostinStefan/cd2b71f24b9b732843851b22e812ac91/raw/53dbf527050708a4f6c23a851a071259e2fe86a4/gistfile3.json';
+      const gistRawUrl = 'https://gist.githubusercontent.com/CostinStefan/cd2b71f24b9b732843851b22e812ac91/raw/0506f8c40b00c17cee93ccf59f237c280784467e/gistfile3.json';
       fetch(gistRawUrl)
         .then(response => response.json())
         .then(data => {
